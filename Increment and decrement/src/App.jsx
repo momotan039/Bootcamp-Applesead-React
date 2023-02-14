@@ -12,6 +12,7 @@ function App() {
    
   return 'red'
 }
+
   return (
     <div className="App">
       <h1 className={changeColor()}>Your number:{count}</h1>
