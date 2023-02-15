@@ -1,0 +1,50 @@
+.order{
+    display: flex;
+    gap: 20px;
+}
+
+.order .Card{
+    width: 25%;
+    background-color: rgb(122, 106, 106);
+    border-radius: 10px;
+}
+
+.order .Card img{
+    height: 150px;
+    width: 100%;
+}
+.order .Card .topping-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.order .Card .topping{
+    background-color:rgb(94, 88, 88);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.order .Card .topping:hover{
+    background-color: red;
+}
+
+.selected-toppings-container{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+.selected-toppings-container > div{
+    width: 20%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: red
+}
+.selected-toppings-container div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
