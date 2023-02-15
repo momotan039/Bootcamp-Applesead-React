@@ -1,5 +1,5 @@
 function MyForm(props){
-    return <form action="">
+    return <form className={props.isShow?'':'hidden'} action="">
         <div>
           <label>First Name:</label>
           <input id='fn' onChange={props.handelChange}></input>

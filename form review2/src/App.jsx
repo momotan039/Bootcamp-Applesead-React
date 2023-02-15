@@ -5,6 +5,7 @@ import MYInput from './myInput'
 import MyForm from './MyForm'
 
 function App() {
+  const [showForm,setShowForm]=useState(true)
   const [formData, setFormData] = useState({
     fn: '',
     ln: '',
@@ -19,18 +20,21 @@ function App() {
 
   const showPreview = () => {
     event.preventDefault()
+    debugger
+    setShowForm(false)
   }
 
   return (
     <div className="App">
-      <div className="hidden">
-        <h1>fn:{formData.fn}</h1>
-        <h1>ln:{formData.ln}</h1>
-        <h1>age:{formData.age}</h1>
-        <h1>text:{formData.text}</h1>
-        <button onClick={()=>console.log("fds")}>back</button>
+      <div className={showForm?'hidden':''}>
+        <h2>first Name:{formData.fn}</h2>
+        <h2>last Name:{formData.ln}</h2>
+        <h2>Age:{formData.age}</h2>
+        <p>h2{formData.text}</p>
+        <button onClick={()=>setShowForm(true)}>back</button>
+        <button>Submit</button>
       </div>
-      <MyForm _showPreview={showPreview} handelChange={renderForm} />
+      <MyForm isShow={showForm} _showPreview={showPreview} handelChange={renderForm} />
     </div>
   )
 }
