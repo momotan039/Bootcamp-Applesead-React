@@ -20,12 +20,12 @@ function App() {
 
   const showPreview = () => {
     event.preventDefault()
-    debugger
     setShowForm(false)
   }
 
   return (
     <div className="App">
+      
       <div className={showForm?'hidden':''}>
         <h2>first Name:{formData.fn}</h2>
         <h2>last Name:{formData.ln}</h2>
