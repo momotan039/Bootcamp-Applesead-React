@@ -10,10 +10,10 @@ export default function Father() {
     // },[])
 
   return (
-    <>
+    <div>
     <h1>Father</h1>
     <Box color='red' />
     <Son/>
-    </>
+    </div>
   )
 }
