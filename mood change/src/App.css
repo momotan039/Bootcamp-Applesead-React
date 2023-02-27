@@ -1,0 +1,40 @@
+#root {
+  text-align: center;
+}
+
+.App{
+  background-color: rgb(149, 147, 147) !important;
+  height: 100vh;
+}
+header{
+  background-color: rgb(249, 235, 235);
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav{
+  padding: 10px;
+}
+header nav a{
+  padding: 10px;
+}
+header button{
+  color: white;
+}
+
+.body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark{
+  background-color: black;
+}
+.dark *{
+  color: white;
+}
+
+header.dark{
+  background-color: #141414;
+}
